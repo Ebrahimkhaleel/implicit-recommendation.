@@ -51,15 +51,15 @@ main.py: Orchestrates the workflow, integrating all components.
 
 ###### Example Output
 Running python main.py produces logs like:
-INFO:__main__:Preprocessing data...
-INFO:__main__:Training ALS model...
-INFO:__main__:Recommendations for user abc12345: [('item_42', 0.95), ('item_17', 0.89), ...]
-INFO:__main__:Explanation for item item_42: {'explanation': 'Recommended because user interacted with similar items', 'similar_items': [{'item_id': 'item_50', 'similarity': 0.92}, ...]}
-INFO:__main__:Model performance: {'precision@k': 0.12, 'recall@k': 0.15}
+- INFO:__main__:Preprocessing data...
+- INFO:__main__:Training ALS model...
+- INFO:__main__:Recommendations for user abc12345: [('item_42', 0.95), ('item_17', 0.89), ...]
+- INFO:__main__:Explanation for item item_42: {'explanation': 'Recommended because user interacted with similar items', 'similar_items': [{'item_id': 'item_50', 'similarity': 0.92}, ...]}
+- INFO:__main__:Model performance: {'precision@k': 0.12, 'recall@k': 0.15}
 
 ###### Notes
 
-Real Data: Replace implicit_feedback_data.csv with your own dataset (columns: user_id, item_id, clicks) for production use.
-Scalability: Uses sparse matrices for efficiency; enable GPU support in recommender.py by setting use_gpu=True if CUDA is available.
-Customization: Adjust parameters in generate_data.py (e.g., n_users, n_items) or recommender.py (e.g., factors, iterations) for tuning.
-Extensibility: Add advanced algorithms (e.g., LightGCN) or metrics (e.g., NDCG) by extending recommender.py or evaluation.py.
+- Real Data: Replace implicit_feedback_data.csv with your own dataset (columns: user_id, item_id, clicks) for production use.
+- Scalability: Uses sparse matrices for efficiency; enable GPU support in recommender.py by setting use_gpu=True if CUDA is available.
+- Customization: Adjust parameters in generate_data.py (e.g., n_users, n_items) or recommender.py (e.g., factors, iterations) for tuning.
+- Extensibility: Add advanced algorithms (e.g., LightGCN) or metrics (e.g., NDCG) by extending recommender.py or evaluation.py.
