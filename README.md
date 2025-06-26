@@ -16,11 +16,12 @@ Required libraries: implicit, pandas, numpy, scikit-learn, scipy
 
 ###### Setup
 
-Clone the repository:git clone https://github.com/your-username/implicit-recommender.git
-cd implicit-recommender
+- Clone the repository:
+git clone https://github.com/Ebrahimkhaleel/implicit-recommendation..git
+cd implicit-recommendation.
 
 
-Install dependencies:pip install implicit pandas numpy scikit-learn scipy
+- Install dependencies:pip install implicit pandas numpy scikit-learn scipy
 
 
 - Generate synthetic data:python generate_data.py
@@ -33,12 +34,12 @@ python main.py
 
 This will:
 
-Load and preprocess the data.
-Train the ALS model.
-Generate recommendations for a sample user.
-Provide an explanation for one recommendation.
-Evaluate the model with precision@5 and recall@5.
-Log similar items for debugging.
+- Load and preprocess the data.
+- Train the ALS model.
+- Generate recommendations for a sample user.
+- Provide an explanation for one recommendation.
+- Evaluate the model with precision@5 and recall@5.
+- Log similar items for debugging.
 
 ###### Files
 
